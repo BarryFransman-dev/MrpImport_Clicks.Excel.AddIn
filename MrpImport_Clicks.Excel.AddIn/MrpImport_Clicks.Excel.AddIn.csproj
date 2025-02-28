@@ -22,7 +22,7 @@
     <PublishUrl>\\vhfcptadc02\data\Company Shared Data\IT\Dev\Install\MrpForcast\</PublishUrl>
     <InstallUrl />
     <TargetCulture>en</TargetCulture>
-    <ApplicationVersion>1.0.0.2</ApplicationVersion>
+    <ApplicationVersion>1.0.0.3</ApplicationVersion>
     <AutoIncrementApplicationRevision>true</AutoIncrementApplicationRevision>
     <UpdateEnabled>true</UpdateEnabled>
     <UpdateInterval>0</UpdateInterval>
@@ -229,9 +229,9 @@
       <FlavorProperties GUID="{BAA0C2D2-18E2-41B9-852F-F413020CAA33}">
         <ProjectProperties HostName="VITAL HEALTH FOODS - Clicks_MRP.xlsx" HostPackage="{3F2B7691-D1D1-402F-9370-2704A737CF60}" OfficeVersion="15.0" VstxVersion="4.0" ApplicationType="XLS" Language="CS" TemplatesPath="VSTOTemplates" DebugInfoExeName="C:\Program Files\Microsoft Office\root\Office16\excel.exe" DebugInfoCommandLine="/x &quot;[$OUTPUT]VITAL HEALTH FOODS - Clicks_MRP.xlsx&quot;" />
         <Host Name="Excel Document" Path=".\VITAL HEALTH FOODS - Clicks_MRP.xlsx" GeneratedCodeNamespace="MrpImport_Clicks.Excel.AddIn" PublishedHash="CFA074DD923E1B0189258B503AE76F3E3824AAD6">
-          <HostItem Name="Sheet1" Code="Sheet1.cs" CanonicalName="Sheet1" DisplayName="Summary" Blueprint="Sheet1.Designer.xml" GeneratedCode="Sheet1.Designer.cs" PublishedHash="2F3E462F4CA728AE8FE882788E1A687F697EFF13" />
-          <HostItem Name="Sheet2" Code="Sheet2.cs" CanonicalName="Sheet2" DisplayName="Detailed" Blueprint="Sheet2.Designer.xml" GeneratedCode="Sheet2.Designer.cs" PublishedHash="B08A670B6578F532372EC0DB9293D9130BBD4B3D" />
-          <HostItem Name="ThisWorkbook" Code="ThisWorkbook.cs" CanonicalName="ThisWorkbook" Blueprint="ThisWorkbook.Designer.xml" GeneratedCode="ThisWorkbook.Designer.cs" PublishedHash="010F03B136C40DD8EAE596468CA694CD9CDEBE16" />
+          <HostItem Name="Sheet1" Code="Sheet1.cs" CanonicalName="Sheet1" PublishedHash="2F3E462F4CA728AE8FE882788E1A687F697EFF13" DisplayName="Summary" Blueprint="Sheet1.Designer.xml" GeneratedCode="Sheet1.Designer.cs" />
+          <HostItem Name="Sheet2" Code="Sheet2.cs" CanonicalName="Sheet2" PublishedHash="B08A670B6578F532372EC0DB9293D9130BBD4B3D" DisplayName="Detailed" Blueprint="Sheet2.Designer.xml" GeneratedCode="Sheet2.Designer.cs" />
+          <HostItem Name="ThisWorkbook" Code="ThisWorkbook.cs" CanonicalName="ThisWorkbook" PublishedHash="010F03B136C40DD8EAE596468CA694CD9CDEBE16" Blueprint="ThisWorkbook.Designer.xml" GeneratedCode="ThisWorkbook.Designer.cs" />
         </Host>
       </FlavorProperties>
     </VisualStudio>

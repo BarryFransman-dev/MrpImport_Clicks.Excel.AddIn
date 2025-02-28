@@ -114,6 +114,7 @@ namespace MrpImport_Clicks.Excel.AddIn
                                     Line = 1,
                                     Reference = "Clicks",
                                     InactiveFlag = string.Empty,
+                                    ForecastType = "C",
                                     ForecastDate = dateCell,
                                     ForecastQtyOutst = quantityCell
                                 };

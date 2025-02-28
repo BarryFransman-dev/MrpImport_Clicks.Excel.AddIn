@@ -38,6 +38,8 @@ namespace MrpImport_Clicks.Excel.AddIn.Models
         [StringLength(1)]
         public string InactiveFlag { get; set; }
 
+        public string ForecastType { get; set; }
+
         [NotMapped]
         public string ClicksStockCode { get; set; }
 

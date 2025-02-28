@@ -19,7 +19,7 @@ namespace MrpImport_Clicks.Excel.AddIn
                 foreach (var item in recs)
                 {
                     dsContext.MrpForecast.AddOrUpdate(p => new
-                    { p.StockCode, p.ForecastWh, p.ForecastDate, p.Line, p.ForecastQtyOutst, p.Reference, p.InactiveFlag }, item);
+                    { p.StockCode, p.ForecastWh, p.ForecastDate, p.Line, p.ForecastQtyOutst, p.Reference, p.InactiveFlag, p.ForecastType }, item);
                     savedRecs += dsContext.SaveChanges();
                 }
             }
@@ -43,13 +43,14 @@ namespace MrpImport_Clicks.Excel.AddIn
                     {
                         // ✅ Update existing record
                         existingEntity.ForecastQtyOutst = item.ForecastQtyOutst;
+                        existingEntity.ForecastType = item.ForecastType;
                         dsContext.Entry(existingEntity).State = EntityState.Modified;
                     }
                     else
                     {
                         // ✅ Insert new record
                         dsContext.MrpForecast.AddOrUpdate(p => new
-                        { p.StockCode, p.ForecastWh, p.ForecastDate, p.Line, p.ForecastQtyOutst, p.Reference, p.InactiveFlag }, item);
+                        { p.StockCode, p.ForecastWh, p.ForecastDate, p.Line, p.ForecastQtyOutst, p.Reference, p.InactiveFlag, p.ForecastType }, item);
                     }
 
                     savedRecs += dsContext.SaveChanges();
